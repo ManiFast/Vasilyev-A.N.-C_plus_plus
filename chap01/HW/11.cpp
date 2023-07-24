@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int respeed(double speed)
+{
+  return speed * 3.6;
+}
+
+int main() {
+
+  system("chcp 1251>nul");
+
+  double speed;
+  cout << "Введите скорость в м/с: ";
+  cin >> speed;
+
+  cout << endl << respeed(speed) << " км/ч" << endl;
+
+  system("pause>nul");
+  return 0;
+}
